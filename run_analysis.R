@@ -14,8 +14,7 @@ tidy.avgs.data.file <- './tidy-UCI-HAR-avgs-dataset.csv'
 if ( !file.exists(local.data.file)) {
   if (download.file.automatically) {
     download.file(data.file,
-                  destfile = local.data.file, method = 'curl')
-  }
+                  destfile = local.data.file )
 }
 
 # Crash if file is not present
